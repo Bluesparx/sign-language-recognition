@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.box {
+    border: 2px solid #333;
+    padding: 10px;
+    min-height: 500px;
+}
+.camera-box {
+    position: relative;
+    width: 640px;
+}
+.text-box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#webcam, #boundingBox {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#accumulated-text {
+    font-size: 24px;
+    min-height: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}

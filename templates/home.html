@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="box camera-box">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="boundingBox"></canvas>
+            <div id="prediction"></div>
+        </div>
+        <div class="box text-box">
+            <div id="accumulated-text"></div>
+            <div class="button-group">
+                <button id="addSpace">Add Space</button>
+                <button id="backspace">Backspace</button>
+                <button id="clear">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
